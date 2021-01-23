@@ -1,0 +1,10 @@
+@layer base {
+  @variants focus, hover {
+    a {
+      @apply text-red-800;
+    }
+  }
+  h2 {
+    @apply text-xl;
+  }
+}

@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* TODO - Need to explore more */
+@variants hover {
+  .App-link {
+    @apply text-red-800;
+  }
+}
+
+/*
+* Base style of elements
+*/
+@layer base { 
+  a {
+    margin: 1px;
+    @apply text-red-800;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  .appBase {
+    @apply rounded-2xl border-black border-2;
+    @apply py-2 p-4;
+  }
+}
