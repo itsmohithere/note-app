@@ -6,23 +6,33 @@
 /* TODO - Need to explore more */
 @variants hover {
   .App-link {
-    @apply text-red-800;
+    text-color: theme("colors.red");
+    /* @apply text-red-800; */
   }
 }
 
 /*
-* Base style of elements
+* Base styles of elements
 */
-@layer base { 
+@layer base {
+  *{
+    padding: 0;
+    margin: 0;
+  }
   a {
     margin: 1px;
-    @apply text-red-800;
+    /* @apply text-red-800; */
   }
-  h2 {
+  button {
+    color: theme("colors.red");
     @apply text-xl;
   }
+
+  button:hover {
+    color: theme("colors.blue");
+  }
   .appBase {
-    @apply rounded-2xl border-black border-2;
+    /* @apply rounded-2xl border-black border-2; */
     @apply py-2 p-4;
   }
 }
